@@ -1,0 +1,23 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+.comments {
+
+  .panel-default {
+    padding: 0 10px 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .panel-success {
+    border-bottom: 1px solid #ccc;
+    padding-left: 10px;
+  }
+
+}
