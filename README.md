@@ -1,4 +1,4 @@
-# Simple ticket system laravel
+# Simple ticket system laravel 8
 
 ## Admin
 User: admins@admin.com 
