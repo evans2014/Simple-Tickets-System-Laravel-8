@@ -9,7 +9,6 @@
     {{ $comment->comment }}
 </p>
 
----
 <p>Replied by: {{ $user->name }}</p>
 
 <p>Title: {{ $ticket->title }}</p>
