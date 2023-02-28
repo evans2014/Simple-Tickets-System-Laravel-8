@@ -117,7 +117,6 @@
                                     <td>
                                         @if($ticket->status === 'Open')
                                             <a href="{{ url('tickets/' . $ticket->ticket_id) }}" class="btn btn-primary">Comment</a>
-
                                             
                                         @endif
                                     </td>
