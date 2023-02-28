@@ -1,9 +1,9 @@
 # Simple ticket system laravel
 
-Admin
+## Admin
 User: admins@admin.com 
 Password: password
 
-User
+## User
 User: user@admin.com
 Password: password
