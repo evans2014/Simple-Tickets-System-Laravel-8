@@ -118,10 +118,7 @@
                                         @if($ticket->status === 'Open')
                                             <a href="{{ url('tickets/' . $ticket->ticket_id) }}" class="btn btn-primary">Comment</a>
 
-                                            <form style="float:right;" action="{{ url('admin/close_ticket/' . $ticket->ticket_id) }}" method="POST">
-                                                {!! csrf_field() !!}
-                                                <button type="submit" class="btn btn-danger">Close</button>
-                                            </form>
+                                            
                                         @endif
                                     </td>
                                 </tr>
