@@ -36,7 +36,7 @@
                                         </td>
                                         <td>
                                             <a href="{{ url('tickets/'. $ticket->ticket_id) }}">
-                                                #{{ $ticket->ticket_id }} - {{ $ticket->title }}
+                                                {{ $ticket->title }}
                                             </a>
                                         </td>
                                         <td>
@@ -103,7 +103,7 @@
                                     </td>
                                     <td>
                                         <a href="{{ url('tickets/'. $ticket->ticket_id) }}">
-                                            #{{ $ticket->ticket_id }} - {{ $ticket->title }}
+                                             {{ $ticket->title }}
                                         </a>
                                     </td>
                                     <td>
