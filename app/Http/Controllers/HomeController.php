@@ -22,12 +22,14 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+public function index()
     {
+          if(Auth::user()->is_admin){
+              $tickets = Ticket::paginate(10);
+          } else {
+              $tickets = Ticket::where('user_id', Auth::user()->id)->paginate(10);
+          }
 
-        $ticket_user = Ticket::where('user_id', Auth::user()->id)->paginate(10);
-        $tickets = Ticket::paginate(10);
-
-        return view('home', compact(['ticket_user', 'tickets']));
+        return view('home', compact(['tickets']));
     }
 }
